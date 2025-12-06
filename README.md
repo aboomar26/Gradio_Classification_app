@@ -2,6 +2,14 @@
 
 Interactive Gradio demo that classifies an uploaded image as **dog**, **cat**, or **snake** using a custom CNN trained in PyTorch. The app overlays the predicted label on the image and returns both the label text and the annotated image.
 
+## 🚀 Try the Live Demo
+
+You can try this app directly in your browser without any setup:
+
+**[https://huggingface.co/spaces/aboomar26/classification-gradio-app](https://huggingface.co/spaces/aboomar26/classification-gradio-app)**
+
+Simply upload an image and get instant predictions!
+
 ## Project Structure
 - `app.py` — Gradio interface wiring the upload UI to the predictor.
 - `core/predict.py` — `CustomCNNClassifier` definition and `ImageClassifier` wrapper for preprocessing, inference, and label overlay.
@@ -22,6 +30,11 @@ pip install -r requirements.txt
 ```
 
 ## Run the app
+
+### Option 1: Try the Live Demo
+Visit the hosted version on Hugging Face Spaces: **[https://huggingface.co/spaces/aboomar26/classification-gradio-app](https://huggingface.co/spaces/aboomar26/classification-gradio-app)**
+
+### Option 2: Run Locally
 ```bash
 python app.py
 ```
